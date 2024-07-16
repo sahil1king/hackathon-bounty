@@ -19,7 +19,7 @@ const balance = async (name: string, accountAddress: AccountAddress, versionToWa
 
 const step1 = async () => {
   console.log(
-    "This code creates two accounts (Alice and Bob), funds Alice, and transfers between them using transferCoinTransaction.",
+    "This code creates two accounts (John and Ron), funds John, and transfers between them using transferCoinTransaction.",
   );
 
   const john = Account.generate();
