@@ -36,10 +36,10 @@ const step1 = async () => {
   });
 
   console.log("\n== Initial Balances ==\n");
-  const aliceBalance = await balance("John", john.accountAddress);
-  const bobBalance = await balance("Ron", ron.accountAddress);
+  const johnBalance = await balance("John", john.accountAddress);
+  const ronBalance = await balance("Ron", ron.accountAddress);
 
-  console.log(`\n== Transfer ${TRANSFER_AMOUNT} from Alice to Bob ==\n`);
+  console.log(`\n== Transfer ${TRANSFER_AMOUNT} from John to Ron ==\n`);
   const transaction = await aptos.transferCoinTransaction({
     sender: john.accountAddress,
     recipient: ron.accountAddress,
@@ -50,13 +50,13 @@ const step1 = async () => {
   console.log(`Committed transaction: ${response.hash}`);
 
   console.log("\n== Balances after transfer ==\n");
-  const newAliceBalance = await balance("John", john.accountAddress, BigInt(response.version));
-  const newBobBalance = await balance("Ron", ron.accountAddress);
+  const newJohnBalance = await balance("John", john.accountAddress, BigInt(response.version));
+  const newRonBalance = await balance("Ron", ron.accountAddress);
 
-  if (newBobBalance !== TRANSFER_AMOUNT + RON_INITIAL_BALANCE)
+  if (newRonBalance !== TRANSFER_AMOUNT + RON_INITIAL_BALANCE)
     throw new Error("Ron's balance after transfer is incorrect");
 
-  if (newAliceBalance >= JOHN_INITIAL_BALANCE - TRANSFER_AMOUNT)
+  if (newJohnBalance >= JOHN_INITIAL_BALANCE - TRANSFER_AMOUNT)
     throw new Error("John's balance after transfer is incorrect");
 };
 
