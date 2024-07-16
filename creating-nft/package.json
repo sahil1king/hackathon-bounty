@@ -1,0 +1,13 @@
+{
+  "scripts": {
+    "create_nft": "ts-node create_nft.ts"
+  },
+  "dependencies": {
+    "@aptos-labs/ts-sdk": "^1.13.0"
+  },
+  "devDependencies": {
+    "@types/node": "latest",
+    "ts-node": "latest",
+    "typescript": "latest"
+  }
+}

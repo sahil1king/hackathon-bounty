@@ -1,0 +1,15 @@
+{
+  "scripts": {
+    "transfer_coin": "ts-node transfer_coin.ts"
+  },
+  "dependencies": {
+    "@aptos-labs/ts-sdk": "^1.23.0",
+    "node": "^18.20.4",
+    "python": "^0.0.4"
+  },
+  "devDependencies": {
+    "@types/node": "latest",
+    "ts-node": "latest",
+    "typescript": "latest"
+  }
+}
