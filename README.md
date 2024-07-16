@@ -43,7 +43,7 @@ check our transaction on the devnet of **aptos_explorer**
 we set up our Aptos client, created two accounts, and funded them.
 
 
-![transfer-coin's output](https://github.com/user-attachments/assets/b5ba7e3b-ed44-41d7-bb82-059884282d0e)
+
 this screenshot shows the output of the code with fund transfered from john's account to ron's account 
 
 
