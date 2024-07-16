@@ -1,7 +1,7 @@
 # hackathon-bounty
 
 
-**<transfer-coin>**
+# **transfer-coin**
 
 
 I used Aptos typescript SDK. SDK - Software Development Kit, collection of software tools and dependencies used by developers,
@@ -57,7 +57,7 @@ this screenshot shows the data from aptos explorer of balance change of acoounts
 
 
 
-**<creating-nft>**
+# **creating-nft**
 
 NFT's - Aptos provides a robust platform for creating, managing, and trading Non-Fungible Tokens (NFTs).These digital assets are
 organized into collections, which act as containers that group similar items under a common theme or purpose. This makes it
